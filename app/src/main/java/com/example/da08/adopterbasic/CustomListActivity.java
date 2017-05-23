@@ -84,9 +84,9 @@ class CustomAdapter extends BaseAdapter{
         // xml을 class로 변환
         Log.d("convertView 체크",position +": convertView"+convertView);
         if(convertView == null)
-            convertView = inflater.inflate(R.layout.itemcustomlist, null);
-
-        TextView no = (TextView) convertView.findViewById(R.id.txtno);
+            convertView = inflater.inflate(R.layout.itemcustomlist, null);  // inflater : itemcustomlist의 넘버랑 타이틀을 하나로 만들어 가져 옴
+            // null은 상속받는게없으므로..
+        TextView no = (TextView) convertView.findViewById(R.id.txtno);  // 이미 itemcustomlist의 textView를 액세스화 할 수 있으므로 convertview. 이라고 작성
         TextView title = (TextView) convertView.findViewById(R.id.txttitle);
 
         // 매줄에 해당되는 데이터를 꺼냄
