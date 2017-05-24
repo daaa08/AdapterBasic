@@ -51,6 +51,8 @@ class Loader{
     }
 }
 
+// 역할 :presenter
+// M데이터를 가져옴 > C가공을 함 > V 화면에 뿌려줌 
 class CustomAdapter extends BaseAdapter{
     ArrayList<Data> datas;
     Context context;
